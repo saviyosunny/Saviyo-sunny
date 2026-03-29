@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Smooth scroll */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Body */
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: #eaeaea;
+        line-height: 1.6;
+    }
+
+    /* Navigation */
+    header {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    nav h2 {
+        color: #00e5ff;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 15px;
+        position: relative;
+    }
+
+    /* underline animation */
+    nav ul li a::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #00e5ff;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+
+    /* Sections */
+    section {
+        width: 85%;
+        margin: 40px auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 15px;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    section:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 32px;
+        color: #00e5ff;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        color: #00e5ff;
+        margin-bottom: 15px;
+    }
+
+    /* Paragraph */
+    p {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+    /* Lists */
+    ul {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+    }
+
+    /* Highlight titles */
+    strong, h4 {
+        color: #ffd54f;
+    }
+
+    /* Links */
+    a {
+        color: #00e5ff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Contact links */
+    #contact a {
+        font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: rgba(0,0,0,0.7);
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+        nav {
+            flex-direction: column;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        section {
+            width: 92%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h1>Hi, I am Saviyo Sunny</h1>
+        <p>I am a student passionate about web development.</p>
+        <p>I am a passionate and motivated student with a strong interest in web development and technology. 
+        I enjoy learning new skills and applying them to create simple and user-friendly websites.</p>
+        <p>I have basic knowledge of HTML and CSS, and I am currently exploring JavaScript to enhance my development skills. 
+        I like solving problems, building small projects, and improving my creativity through coding.</p>
+        <p>My goal is to become a skilled web developer and contribute to innovative and meaningful projects in the future. 
+        I am always eager to learn, grow, and take on new challenges.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>I am a beginner in web development and currently learning the basics step by step.</p>
+        <ul>
+            <li>HTML – I can create simple web pages using basic tags.</li>
+            <li>CSS – I can add colors, fonts, and simple layouts to make pages look better.</li>
+            <li>Basic Computer Skills – I am comfortable using computers and the internet.</li>
+        </ul>
+        <p>I am continuously practicing and improving my skills by working on small projects.</p>
+        <p>I am interested in learning more technologies like JavaScript in the future.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>As a beginner, I have started working on small projects to improve my skills and gain practical experience.</p>
+        <p><strong>1. Portfolio Website:</strong> I created a simple personal portfolio using HTML and CSS to showcase my skills and basic information.</p>
+        <p><strong>2. Simple Calculator:</strong> I built a basic calculator using HTML and CSS to understand layout and design.</p>
+        <p><strong>3. Static Web Page:</strong> I designed a simple webpage with headings, images, and text to practice HTML structure.</p>
+        <p>I am continuously working on new projects to improve my knowledge and confidence in web development.</p>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <p>I have completed the following certifications as part of my learning journey:</p>
+
+        <div>
+            <h4>NASSCOM Digital 101</h4>
+            <p>Certified in the NASSCOM Digital 101 certification program...</p>
+        </div>
+
+        <div>
+            <h4>Infosys Springboard</h4>
+            <p>Completed certification through the Infosys Springboard platform...</p>
+        </div>
+
+        <p>I am continuously learning and working towards earning more certifications.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>I would be happy to connect and communicate for any opportunities, learning, or collaboration.</p>
+        <p>Email: saviyosunny23@gmail.com</p>
+        <p>Phone: +91 7012487717</p>
+
+        <p>You can also reach me through my social profiles:</p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/saviyo-sunny-20b938379" target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
+
+        <p>Feel free to contact me anytime. I will try to respond as soon as possible.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Saviyo Sunny</p>
+    </footer>
+
+</body>
+</html>
